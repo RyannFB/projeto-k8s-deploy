@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: app
+  labels:
+    app: backend
+spec:
+  selector:
+    app: backend
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+    name: http
