@@ -370,6 +370,7 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 1. **Imagens Docker**: Substitua as imagens padrão por suas próprias imagens do Docker Hub:
    - `backend-deploy`: `seu-usuario/seu-backend:latest`
    - `frontend-deploy`: `seu-usuario/seu-frontend:latest`
+     
       Para essas imagens utilizadas foram feitas com base no repositório base deste projeto: https://github.com/pedrofilhojp/kube-students-projects/tree/main em cima desse repositório foi retirado as imagens do frontend para utilizar no Deployment, mas coube um leve ajuste no ConfigMap para utilizar uma variável que aponta para a URL da API do VITE.
       
 2. **Persistência**: O PostgreSQL usa uma PVC que persiste entre reinicializações do cluster.
@@ -393,4 +394,5 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 - ✅ Readiness/Liveness Probes configurados
 - ✅ Namespace separation (app e database)
 ---
+
 
