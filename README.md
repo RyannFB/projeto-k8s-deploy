@@ -384,7 +384,7 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 
 5. **ConfigMap e Secrets**: Alterações em ConfigMap requerem reinicialização dos pods para serem aplicadas.
 
-## Critérios de Avaliação
+Pontos importantes acerca deste projeto:
 
 - ✅ Deploy funcional de todos os componentes
 - ✅ Uso correto de ConfigMap e Secret
@@ -394,5 +394,6 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 - ✅ Readiness/Liveness Probes configurados
 - ✅ Namespace separation (app e database)
 ---
+
 
 
